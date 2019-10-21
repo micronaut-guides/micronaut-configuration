@@ -1,0 +1,11 @@
+We can validate `@ConfigurationBuilder` is applied properly with the following spock test. The test format is similar to previous tests.
+
+[source,groovy]
+.src/test/groovy/micronaut/configuration/groovy/TeamConfigurationSpec.groovy
+----
+include::{sourceDir}/src/test/groovy/micronaut/configuration/groovy/TeamConfigurationSpec.groovy[tag=teamConfigSpecBuilder]
+----
+
+<1> Properties which will invoke the builder methods on `TeamAdmin.Builder`
+<2> The builder object is now configured, so we must run `build()` on it to create the `TeamAdmin` object
+<3> Verify the object is created with the `applicaton.yml` properties

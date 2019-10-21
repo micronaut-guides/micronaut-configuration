@@ -1,0 +1,10 @@
+Let's validate that the bean is available in the application context and is created with the values declared in the `application.xml`.
+
+[source,groovy]
+.src/test/groovy/micronaut/configuration/groovy/TeamConfigurationSpec.groovy
+----
+include::{sourceDir}/src/test/groovy/micronaut/configuration/groovy/TeamConfigurationSpec.groovy[tag=teamConfigSpecNoBuilder]
+}
+----
+
+<1> Setup configuration properties for the test to use

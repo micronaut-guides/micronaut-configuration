@@ -4,5 +4,17 @@ gettingStarted:
   howto: How to complete the guide
 writingTheApp:
   title: Writing the Application
+configurationProperties:
+  title: Team Configuration with @ConfigurationProperties
+  configurationPropertiesTest: Test @ConfigurationProperties
+configurationBuilder:
+  title: Team Admin Builder with @ConfigurationBuilder
+  configurationBuilderTest: Test @ConfigurationBuilder
+eachProperty:
+  title: Stadiums with @EachProperty
+  eachPropertyTest: Test @EachProperty
 runningTheApp:
   title: Running the Application
+controller:
+  title: Controller
+next: Where To Go From Here?

@@ -1,0 +1,12 @@
+Validate the configuration with a test. Notice multiple beans are created from the configuration.  In a controller we can
+inject a particular `StadiumConfiguration` instance bean by using the `@Named` parameter with qualifier name.
+
+[source,groovy]
+.src/test/groovy/micronaut/configuration/groovy/StadiumConfigurationSpec.groovy
+----
+include::{sourceDir}/src/test/groovy/micronaut/configuration/groovy/StadiumConfigurationSpec.groovy[]
+}
+----
+
+<1> Multiple configurations can be declared for the same class.
+<2> Since there are multiple beans to retrieve a bean a `Qualifier` must be sent.
