@@ -15,10 +15,10 @@ include::{sourceDir}/src/main/resources/application.yml[tag=allTeamConfig]
 
 The `TeamAdmin` object abides by the Builder pattern.
 
-[source,groovy]
-.src/main/groovy/micronaut/configuration/groovy/TeamAdmin.groovy
+[source,java]
+.src/main/java/micronaut/configuration/TeamAdmin.java
 ----
-include::{sourceDir}/src/main/groovy/micronaut/configuration/groovy/TeamAdmin.groovy[]
+include::{sourceDir}/src/main/java/micronaut/configuration/TeamAdmin.java[]
 ----
 
 <1> `TeamAdmin` is the configuration object which consumes the declared properties.
@@ -34,10 +34,10 @@ We are using the builder only here, so we will have to call `builder.build()` to
 In our case, we will call `builder.build()` in the spock test.
 
 
-[source,groovy]
-.src/main/groovy/micronaut/configuration/groovy/TeamConfiguration.groovy
+[source,java]
+.src/main/java/micronaut/configuration/TeamConfiguration.java
 ----
-include::{sourceDir}/src/main/groovy/micronaut/configuration/groovy/TeamConfiguration.groovy[tag=teamConfigClassBuilder]
+include::{sourceDir}/src/main/java/micronaut/configuration/TeamConfiguration.java[tag=teamConfigClassBuilder]
 ----
 
 <1> `prefixes` tells Micronaut to find methods that are prefixed by `with`; `configurationPrefix` allows the developer to customize the `application.yml` element

@@ -2,10 +2,10 @@ Configuration beans can be injected into the application with just like any othe
 create a controller where the beans are constructor injected. The `StadiumConfiguration` class has two
 instances, so for injection we need to use the `@Named` annotation with a qualifier name to specify the bean.
 
-[source,groovy]
-.src/main/groovy/micronaut/configuration/groovy/MyController.groovy
+[source,java]
+.src/main/java/micronaut/configuration/MyController.java
 ----
-include::{sourceDir}/src/main/groovy/micronaut/configuration/groovy/MyController.groovy[]
+include::{sourceDir}/src/main/java/micronaut/configuration/MyController.java[]
 ----
 
 <1> Injection of configuration beans; `@Named` annotation is needed to choose which `StadiumConfiguration` instance is retrieved.

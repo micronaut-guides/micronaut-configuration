@@ -10,9 +10,9 @@ include::{sourceDir}/src/main/resources/application.yml[tag=teamConfig]
 With Micronaut we can use the `@ConfigurationProperties` annotation to slurp the configuration into a bean. Each property that matches
 the configuration in the `application.yml` will call the setter in the bean. The bean will be subsequently available for injection in the application!
 
-[source,groovy]
-.src/main/groovy/micronaut/configuration/groovy/TeamConfiguration.groovy
+[source,java]
+.src/main/java/micronaut/configuration/TeamConfiguration.java
 ----
-include::{sourceDir}/src/main/groovy/micronaut/configuration/groovy/TeamConfiguration.groovy[tag=teamConfigClassNoBuilder]
+include::{sourceDir}/src/main/java/micronaut/configuration/TeamConfiguration.java[tag=teamConfigClassNoBuilder]
 }
 ----

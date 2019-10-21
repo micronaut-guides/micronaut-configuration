@@ -12,10 +12,10 @@ include::{sourceDir}/src/main/resources/application.yml[tag=stadiumConfig]
 We can use `@EachProperty` which will cycle through the configuration and read each nested clause as a bean. The higher level
 property will be parameterized as the name.
 
-[source,groovy]
-.src/main/groovy/micronaut/configuration/groovy/StadiumConfiguration.groovy
+[source,java]
+.src/main/java/micronaut/configuration/StadiumConfiguration.java
 ----
-include::{sourceDir}/src/main/groovy/micronaut/configuration/groovy/StadiumConfiguration.groovy[]
+include::{sourceDir}/src/main/java/micronaut/configuration/StadiumConfiguration.java[]
 ----
 
 <1> Establish the top layer of configuration
