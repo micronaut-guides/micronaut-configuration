@@ -66,5 +66,17 @@ class TeamAdmin { // <1>
             teamAdmin.president = this.president;
             return teamAdmin;
         }
+
+        public String getManager() {
+            return manager;
+        }
+
+        public String getCoach() {
+            return coach;
+        }
+
+        public String getPresident() {
+            return president;
+        }
     }
 }
