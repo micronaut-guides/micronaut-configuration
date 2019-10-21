@@ -53,7 +53,7 @@ public class TeamConfigurationTests {
         List<String> names = new ArrayList<>();
         names.add("Nirav Assar");
         names.add("Lionel Messi");
-        items.put("team.team-admin.manager", "Jerry Jones");
+        items.put("team.team-admin.manager", "Jerry Jones"); // <1>
         items.put("team.team-admin.coach", "Tommy O'Neill");
         items.put("team.team-admin.president", "Mark Scanell");
 
@@ -73,7 +73,7 @@ public class TeamConfigurationTests {
         assertEquals("Mark Scanell", teamConfiguration.builder.getPresident());
 
         // check the object can be built
-        assertEquals("Jerry Jones", teamAdmin.getManager());
+        assertEquals("Jerry Jones", teamAdmin.getManager()); // <3>
         assertEquals("Tommy O'Neill", teamAdmin.getCoach());
         assertEquals("Mark Scanell", teamAdmin.getPresident());
 
