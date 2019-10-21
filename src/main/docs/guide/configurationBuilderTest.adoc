@@ -1,4 +1,4 @@
-We can validate `@ConfigurationBuilder` is applied properly with the following spock test. The test format is similar to previous tests.
+We can validate `@ConfigurationBuilder` is applied properly with the following JUnit test. The test format is similar to previous tests.
 
 [source,groovy]
 .src/test/groovy/micronaut/configuration/groovy/TeamConfigurationSpec.groovy

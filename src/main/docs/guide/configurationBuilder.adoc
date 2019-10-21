@@ -31,7 +31,7 @@ This tells Micronaut that configuration can be read in and an object can be cons
 
 [NOTE]
 We are using the builder only here, so we will have to call `builder.build()` to actually get the `TeamAdmin` object, at a later time.
-In our case, we will call `builder.build()` in the spock test.
+In our case, we will call `builder.build()` in the JUnit test.
 
 
 [source,java]
