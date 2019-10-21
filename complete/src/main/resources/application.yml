@@ -1,6 +1,6 @@
 micronaut:
   application:
-    name: micronaut-configuration-groovy
+    name: micronaut-configuration
 ---
 # tag::allTeamConfig[]
 # tag::teamConfig[]
