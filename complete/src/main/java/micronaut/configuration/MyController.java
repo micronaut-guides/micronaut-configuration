@@ -1,32 +1,30 @@
-package micronaut.configuration
+package micronaut.configuration;
 
-import groovy.transform.CompileStatic
-import io.micronaut.http.HttpResponse
-import io.micronaut.http.annotation.Controller
-import io.micronaut.http.annotation.Get
+import io.micronaut.http.HttpResponse;
+import io.micronaut.http.annotation.Controller;
+import io.micronaut.http.annotation.Get;
 
-import javax.annotation.Nullable
-import javax.inject.Named
+import javax.annotation.Nullable;
+import javax.inject.Named;
 
-@CompileStatic
 @Controller("/my")
-class MyController {
+public class MyController {
 
-    TeamConfiguration teamConfiguration
-    StadiumConfiguration stadiumConfiguration
+    private TeamConfiguration teamConfiguration;
+    private StadiumConfiguration stadiumConfiguration;
 
-    MyController(@Nullable TeamConfiguration teamConfiguration, @Nullable @Named("pnc") StadiumConfiguration stadiumConfiguration) { // <1>
-        this.teamConfiguration = teamConfiguration
-        this.stadiumConfiguration = stadiumConfiguration
+    public MyController(@Nullable TeamConfiguration teamConfiguration, @Nullable @Named("pnc") StadiumConfiguration stadiumConfiguration) { // <1>
+        this.teamConfiguration = teamConfiguration;
+        this.stadiumConfiguration = stadiumConfiguration;
     }
 
     @Get("/team")
-    HttpResponse<TeamConfiguration> team() {
-        return HttpResponse.ok(this.teamConfiguration)
+    public HttpResponse<TeamConfiguration> team() {
+        return HttpResponse.ok(this.teamConfiguration);
     }
 
     @Get("/stadium")
-    HttpResponse<StadiumConfiguration> stadium() {
-        return HttpResponse.ok(this.stadiumConfiguration)
+    public  HttpResponse<StadiumConfiguration> stadium() {
+        return HttpResponse.ok(this.stadiumConfiguration);
     }
 }

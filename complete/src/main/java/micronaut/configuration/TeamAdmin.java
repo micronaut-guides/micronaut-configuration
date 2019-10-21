@@ -1,44 +1,70 @@
-package micronaut.configuration
+package micronaut.configuration;
 
 class TeamAdmin { // <1>
 
-    String manager, coach, president
+    private String manager;
+    private String coach;
+    private String president;
 
     // should use the builder pattern to create the object
     private TeamAdmin() {
     }
 
-    static Builder builder() {
-        return new Builder()
+    public String getManager() {
+        return manager;
     }
 
-    static class Builder { // <2>
-        String manager
-        String coach
-        String president
+    public void setManager(String manager) {
+        this.manager = manager;
+    }
+
+    public String getCoach() {
+        return coach;
+    }
+
+    public void setCoach(String coach) {
+        this.coach = coach;
+    }
+
+    public String getPresident() {
+        return president;
+    }
+
+    public void setPresident(String president) {
+        this.president = president;
+    }
+
+    public static Builder builder() {
+        return new Builder();
+    }
+
+    public static class Builder { // <2>
+        private String manager;
+        private String coach;
+        private String president;
 
         // <3>
-        Builder withManager(String manager) {
-            this.manager = manager
-            this
+        public Builder withManager(String manager) {
+            this.manager = manager;
+            return this;
         }
 
-        Builder withCoach(String coach) {
-            this.coach = coach
-            this
+        public Builder withCoach(String coach) {
+            this.coach = coach;
+            return this;
         }
 
-        Builder withPresident(String president) {
-            this.president = president
-            this
+        public Builder withPresident(String president) {
+            this.president = president;
+            return this;
         }
 
-        TeamAdmin build() { // <4>
-            TeamAdmin teamAdmin = new TeamAdmin()
-            teamAdmin.manager = this.manager
-            teamAdmin.coach = this.coach
-            teamAdmin.president = this.president
-            teamAdmin
+        public TeamAdmin build() { // <4>
+            TeamAdmin teamAdmin = new TeamAdmin();
+            teamAdmin.manager = this.manager;
+            teamAdmin.coach = this.coach;
+            teamAdmin.president = this.president;
+            return teamAdmin;
         }
     }
 }
