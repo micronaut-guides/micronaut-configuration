@@ -13,7 +13,8 @@ public class MyController {
     private final TeamConfiguration teamConfiguration;
     private final StadiumConfiguration stadiumConfiguration;
 
-    public MyController(@Nullable TeamConfiguration teamConfiguration, @Nullable @Named("pnc") StadiumConfiguration stadiumConfiguration) { // <1>
+    public MyController(@Nullable TeamConfiguration teamConfiguration,
+                        @Nullable @Named("pnc") StadiumConfiguration stadiumConfiguration) { // <1>
         this.teamConfiguration = teamConfiguration;
         this.stadiumConfiguration = stadiumConfiguration;
     }

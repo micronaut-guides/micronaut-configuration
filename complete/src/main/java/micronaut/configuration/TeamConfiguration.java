@@ -1,4 +1,3 @@
-
 package micronaut.configuration;
 
 import io.micronaut.context.annotation.ConfigurationBuilder;
@@ -15,8 +14,11 @@ class TeamConfiguration {
     private List<String> playerNames;
 //end::teamConfigClassNoBuilder[]
 
+    public TeamConfiguration() {
+    }
+
     @ConfigurationBuilder(prefixes = "with", configurationPrefix = "team-admin") // <1>
-    TeamAdmin.Builder builder = TeamAdmin.builder(); // <2>
+    protected TeamAdmin.Builder builder = TeamAdmin.builder(); // <2>
 
     public TeamAdmin.Builder getBuilder() {
         return builder;
