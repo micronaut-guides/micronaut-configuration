@@ -1,9 +1,11 @@
 sudo: false
 cache:
   directories:
-  - $HOME/.gradle
+    - "$HOME/.gradle"
 jdk:
-- oraclejdk8
+  - openjdk8
 before_script:
-- rm -rf target
-script: ./travis-build.sh
+  - rm -rf target
+script:
+  - if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then bash ./travis-build-pr.sh; fi
+  - if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then bash ./travis-build.sh; fi
