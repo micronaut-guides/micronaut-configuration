@@ -7,7 +7,9 @@ micronaut:
 team:
   name: 'Steelers'
   color: 'Black'
-  player-names: ['Mason Rudolph', 'James Connor']
+  player-names:
+    - 'Mason Rudolph'
+    - 'James Connor'
 # end::teamConfig[]
   team-admin:
     manager: 'Nirav Assar' # <1>
