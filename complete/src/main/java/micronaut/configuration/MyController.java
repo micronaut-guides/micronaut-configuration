@@ -10,8 +10,8 @@ import javax.inject.Named;
 @Controller("/my")
 public class MyController {
 
-    private TeamConfiguration teamConfiguration;
-    private StadiumConfiguration stadiumConfiguration;
+    private final TeamConfiguration teamConfiguration;
+    private final StadiumConfiguration stadiumConfiguration;
 
     public MyController(@Nullable TeamConfiguration teamConfiguration, @Nullable @Named("pnc") StadiumConfiguration stadiumConfiguration) { // <1>
         this.teamConfiguration = teamConfiguration;
