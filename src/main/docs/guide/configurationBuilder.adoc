@@ -16,9 +16,9 @@ include::{sourceDir}/src/main/resources/application.yml[tag=allTeamConfig]
 The `TeamAdmin` object abides by the Builder pattern.
 
 [source,java]
-.src/main/java/micronaut/configuration/TeamAdmin.java
+.src/main/java/example/micronaut/TeamAdmin.java
 ----
-include::{sourceDir}/src/main/java/micronaut/configuration/TeamAdmin.java[]
+include::{sourceDir}/src/main/java/example/micronaut/TeamAdmin.java[]
 ----
 
 <1> `TeamAdmin` is the configuration object which consumes the declared properties.
@@ -35,9 +35,9 @@ In our case, we will call `builder.build()` in the JUnit test.
 
 
 [source,java]
-.src/main/java/micronaut/configuration/TeamConfiguration.java
+.src/main/java/example/micronaut/TeamConfiguration.java
 ----
-include::{sourceDir}/src/main/java/micronaut/configuration/TeamConfiguration.java[tag=teamConfigClassBuilder]
+include::{sourceDir}/src/main/java/example/micronaut/TeamConfiguration.java[tag=teamConfigClassBuilder]
 ----
 
 <1> `prefixes` tells Micronaut to find methods that are prefixed by `with`; `configurationPrefix` allows the developer to customize the `application.yml` element

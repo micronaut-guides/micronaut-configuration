@@ -11,10 +11,10 @@ With Micronaut we can use the `@ConfigurationProperties` annotation to slurp the
 the configuration in the `application.yml` will call the setter in the bean. The bean will be subsequently available for injection in the application!
 
 [source,java]
-.src/main/java/micronaut/configuration/TeamConfiguration.java
+.src/main/java/example/micronaut/TeamConfiguration.java
 ----
-include::{sourceDir}/src/main/java/micronaut/configuration/TeamConfiguration.java[tag=teamConfigClassNoBuilder]
+include::{sourceDir}/src/main/java/example/micronaut/TeamConfiguration.java[tag=teamConfigClassNoBuilder]
 
-include::{sourceDir}/src/main/java/micronaut/configuration/TeamConfiguration.java[tag=gettersandsetters]
+include::{sourceDir}/src/main/java/example/micronaut/TeamConfiguration.java[tag=gettersandsetters]
 }
 ----

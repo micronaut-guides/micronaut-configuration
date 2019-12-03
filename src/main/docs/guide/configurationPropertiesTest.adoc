@@ -1,9 +1,9 @@
 Let's validate that the bean is available in the application context and is created with the values declared in the `application.xml`.
 
 [source,java]
-.src/test/java/micronaut/configuration/TeamConfigurationTests.java
+.src/test/java/example/micronaut/TeamConfigurationTests.java
 ----
-include::{sourceDir}/src/test/java/micronaut/configuration/TeamConfigurationTests.java[tag=teamConfigSpecNoBuilder]
+include::{sourceDir}/src/test/java/example/micronaut/TeamConfigurationTests.java[tag=teamConfigSpecNoBuilder]
 }
 ----
 

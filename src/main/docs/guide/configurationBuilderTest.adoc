@@ -1,9 +1,9 @@
 We can validate `@ConfigurationBuilder` is applied properly with the following JUnit test. The test format is similar to previous tests.
 
 [source,java]
-.src/test/java/micronaut/configuration/TeamConfigurationSpec.java
+.src/test/java/example/micronaut/TeamConfigurationSpec.java
 ----
-include::{sourceDir}/src/test/java/micronaut/configuration/TeamConfigurationTests.java[tag=teamConfigSpecBuilder]
+include::{sourceDir}/src/test/java/example/micronaut/TeamConfigurationTests.java[tag=teamConfigSpecBuilder]
 ----
 
 <1> Properties which will invoke the builder methods on `TeamAdmin.Builder`

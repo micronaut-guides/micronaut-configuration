@@ -2,9 +2,9 @@ Validate the configuration with a test. Notice multiple beans are created from t
 inject a particular `StadiumConfiguration` instance bean by using the `@Named` parameter with qualifier name.
 
 [source,java]
-.src/test/java/micronaut/configuration/StadiumConfigurationTests.java
+.src/test/java/example/micronaut/StadiumConfigurationTests.java
 ----
-include::{sourceDir}/src/test/java/micronaut/configuration/StadiumConfigurationTests.java[]
+include::{sourceDir}/src/test/java/example/micronaut/StadiumConfigurationTests.java[]
 ----
 
 <1> Multiple configurations can be declared for the same class.

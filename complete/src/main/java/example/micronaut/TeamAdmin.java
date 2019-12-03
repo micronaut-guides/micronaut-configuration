@@ -1,4 +1,4 @@
-package micronaut.configuration;
+package example.micronaut;
 
 public class TeamAdmin { // <1>
 

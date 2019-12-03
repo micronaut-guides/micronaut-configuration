@@ -3,9 +3,9 @@ create a controller where the beans are constructor injected. The `StadiumConfig
 instances, so for injection we need to use the `@Named` annotation with a qualifier name to specify the bean.
 
 [source,java]
-.src/main/java/micronaut/configuration/MyController.java
+.src/main/java/example/micronaut/MyController.java
 ----
-include::{sourceDir}/src/main/java/micronaut/configuration/MyController.java[]
+include::{sourceDir}/src/main/java/example/micronaut/MyController.java[]
 ----
 
 <1> Injection of configuration beans; `@Named` annotation is needed to choose which `StadiumConfiguration` instance is retrieved.

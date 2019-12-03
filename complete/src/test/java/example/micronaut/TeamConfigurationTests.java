@@ -1,5 +1,7 @@
-package micronaut.configuration;
+package example.micronaut;
 
+import example.micronaut.TeamAdmin;
+import example.micronaut.TeamConfiguration;
 import io.micronaut.context.ApplicationContext;
 import org.junit.jupiter.api.Test;
 

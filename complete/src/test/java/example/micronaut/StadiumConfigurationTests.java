@@ -1,5 +1,6 @@
-package micronaut.configuration;
+package example.micronaut;
 
+import example.micronaut.StadiumConfiguration;
 import io.micronaut.context.ApplicationContext;
 import io.micronaut.inject.qualifiers.Qualifiers;
 import org.junit.jupiter.api.Test;

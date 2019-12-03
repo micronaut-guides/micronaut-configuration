@@ -1,4 +1,4 @@
-package micronaut.configuration;
+package example.micronaut;
 
 
 import io.micronaut.context.annotation.EachProperty;
