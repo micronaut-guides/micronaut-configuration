@@ -21,7 +21,7 @@ public class TeamConfigurationTests {
     void testTeamConfiguration() {
 
         List<String> names = Arrays.asList("Nirav Assar", "Lionel Messi");
-        Map<String, Object> items = new HashMap<>() {{
+        Map<String, Object> items = new HashMap<String, Object>() {{
             put("team.name", "evolution");
             put("team.color", "green");
             put("team.player-names", names);
@@ -52,17 +52,16 @@ public class TeamConfigurationTests {
     //tag::teamConfigSpecBuilder[]
     @Test
     void testTeamConfigurationBuilder() {
-        Map<String, Object> items = new HashMap<>();
-        items.put("team.name", "evolution");
-        items.put("team.color", "green");
-        List<String> names = new ArrayList<>();
-        names.add("Nirav Assar");
-        names.add("Lionel Messi");
-        items.put("team.team-admin.manager", "Jerry Jones"); // <1>
-        items.put("team.team-admin.coach", "Tommy O'Neill");
-        items.put("team.team-admin.president", "Mark Scanell");
 
-        items.put("team.player-names", names);
+        List<String> names = Arrays.asList("Nirav Assar", "Lionel Messi");
+        Map<String, Object> items = new HashMap<String, Object>() {{
+            put("team.name", "evolution");
+            put("team.color", "green");
+            put("team.team-admin.manager", "Jerry Jones"); // <1>
+            put("team.team-admin.coach", "Tommy O'Neill");
+            put("team.team-admin.president", "Mark Scanell");
+            put("team.player-names", names);
+        }};
         ApplicationContext ctx = ApplicationContext.run(ApplicationContext.class, items);
         TeamConfiguration teamConfiguration = ctx.getBean(TeamConfiguration.class);
         TeamAdmin teamAdmin = teamConfiguration.builder.build(); // <2>
