@@ -1,6 +1,6 @@
 package micronaut.configuration;
 
-class TeamAdmin { // <1>
+public class TeamAdmin { // <1>
 
     private String manager;
     private String coach;

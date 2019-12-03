@@ -8,7 +8,7 @@ import java.util.List;
 //tag::teamConfigClassBuilder[]
 //tag::teamConfigClassNoBuilder[]
 @ConfigurationProperties("team")
-class TeamConfiguration {
+public class TeamConfiguration {
     private String name;
     private String color;
     private List<String> playerNames;
