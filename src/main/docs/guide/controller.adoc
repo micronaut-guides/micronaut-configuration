@@ -13,3 +13,12 @@ include::{sourceDir}/src/main/java/example/micronaut/MyController.java[]
 [NOTE]
 In the browser go to http://localhost:8080/my/team and http://localhost:8080/my/stadium.
 To test the app, run `./gradlew test`
+
+
+Add test:
+
+[source,java]
+.src/test/java/example/micronaut/MyControllerTest.java
+----
+include::{sourceDir}/src/main/java/example/micronaut/MyControllerTest.java[]
+----
