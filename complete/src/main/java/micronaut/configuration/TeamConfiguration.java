@@ -28,6 +28,7 @@ public class TeamConfiguration {
         this.builder = builder;
     }
 
+    //tag::gettersandsetters[]
     public String getName() {
         return name;
     }
@@ -51,5 +52,6 @@ public class TeamConfiguration {
     public void setPlayerNames(List<String> playerNames) {
         this.playerNames = playerNames;
     }
+    //end::gettersandsetters[]
 }
 //end::teamConfigClassBuilder[]

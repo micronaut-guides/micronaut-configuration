@@ -14,5 +14,7 @@ the configuration in the `application.yml` will call the setter in the bean. The
 .src/main/java/micronaut/configuration/TeamConfiguration.java
 ----
 include::{sourceDir}/src/main/java/micronaut/configuration/TeamConfiguration.java[tag=teamConfigClassNoBuilder]
+
+include::{sourceDir}/src/main/java/micronaut/configuration/TeamConfiguration.java[tag=gettersandsetters]
 }
 ----
