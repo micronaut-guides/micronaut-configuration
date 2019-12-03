@@ -18,3 +18,5 @@ runningTheApp:
 controller:
   title: Controller
 next: Where To Go From Here?
+graal:
+  title: Generating a Native Image with GraalVM
