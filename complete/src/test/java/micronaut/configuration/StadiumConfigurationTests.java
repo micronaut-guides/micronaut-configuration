@@ -13,11 +13,12 @@ public class StadiumConfigurationTests {
 
     @Test
     void testStadiumConfiguration() {
-        Map<String, Object> items = new HashMap<>();
-        items.put("stadium.fenway.city", "Boston"); // <1>
-        items.put("stadium.fenway.size", 60000);
-        items.put("stadium.wrigley.city", "Chicago"); // <1>
-        items.put("stadium.wrigley.size", 45000);
+        Map<String, Object> items = new HashMap<>() {{
+            put("stadium.fenway.city", "Boston"); // <1>
+            put("stadium.fenway.size", 60000);
+            put("stadium.wrigley.city", "Chicago"); // <1>
+            put("stadium.wrigley.size", 45000);
+        }};
 
         ApplicationContext ctx = ApplicationContext.run(ApplicationContext.class, items);
         // <2>
@@ -28,5 +29,7 @@ public class StadiumConfigurationTests {
         assertEquals(60000, fenwayConfiguration.getSize());
         assertEquals("wrigley", wrigleyConfiguration.getName());
         assertEquals(45000, wrigleyConfiguration.getSize());
+
+        ctx.close();
     }
 }
