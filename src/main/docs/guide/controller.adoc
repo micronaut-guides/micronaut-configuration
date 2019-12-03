@@ -20,5 +20,5 @@ Add test:
 [source,java]
 .src/test/java/example/micronaut/MyControllerTest.java
 ----
-include::{sourceDir}/src/main/java/example/micronaut/MyControllerTest.java[]
+include::{sourceDir}/src/test/java/example/micronaut/MyControllerTest.java[]
 ----

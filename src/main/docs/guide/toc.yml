@@ -17,6 +17,6 @@ runningTheApp:
   title: Running the Application
 controller:
   title: Controller
-next: Where To Go From Here?
 graal:
-  title: Generating a Native Image with GraalVM
+  title: Generating a Micronaut Application's Native Image with GraalVM
+next: Where To Go From Here?

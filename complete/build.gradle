@@ -33,7 +33,7 @@ dependencies {
     //end::micronaut-graal[]
 
     //tag::svm[]
-    compileOnly "com.oracle.substratevm:svm"
+    compileOnly "org.graalvm.nativeimage:svm:19.3.0"
     //end::svm[]
 
     runtimeOnly "ch.qos.logback:logback-classic:1.2.3"
