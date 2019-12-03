@@ -3,7 +3,9 @@ package micronaut.configuration;
 
 import io.micronaut.context.annotation.EachProperty;
 import io.micronaut.context.annotation.Parameter;
+import io.micronaut.core.annotation.Introspected;
 
+@Introspected
 @EachProperty("stadium") // <1>
 public class StadiumConfiguration {
     private String name; // <2>
