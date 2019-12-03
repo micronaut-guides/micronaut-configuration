@@ -13,7 +13,7 @@ public class StadiumConfigurationTests {
 
     @Test
     void testStadiumConfiguration() {
-        Map<String, Object> items = new HashMap<>() {{
+        Map<String, Object> items = new HashMap<String, Object>() {{
             put("stadium.fenway.city", "Boston"); // <1>
             put("stadium.fenway.size", 60000);
             put("stadium.wrigley.city", "Chicago"); // <1>
