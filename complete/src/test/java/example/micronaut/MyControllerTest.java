@@ -1,7 +1,5 @@
 package example.micronaut;
 
-import example.micronaut.StadiumConfiguration;
-import example.micronaut.TeamConfiguration;
 import io.micronaut.http.HttpRequest;
 import io.micronaut.http.client.HttpClient;
 import io.micronaut.http.client.annotation.Client;
