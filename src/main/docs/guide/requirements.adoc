@@ -1,1 +1,1 @@
-include::{commondir}/common-requirements.adoc[]
+Please mention the versions of 'Maven' and 'Gradle' that are required for micronaut, explicitly here. New developers might face this issue in beginning.
